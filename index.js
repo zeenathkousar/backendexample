@@ -3,6 +3,8 @@ const app=express();
 import userRouter from './routes/userRouter.js';
 import { connectDB } from './db.js';
 import cors from 'cors';
+import 'dotenv/config'
+
 
 app.use(cors())
 app.use(cors({origin: '*'}));
